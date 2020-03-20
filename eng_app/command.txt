@@ -1,0 +1,6 @@
+#to build docker image 
+sudo docker build -t eng_app .
+
+#delete sudo docker image rm miyakz1192/eng_app:1 docker image
+sudo docker image rm miyakz1192/eng_app:1
+
