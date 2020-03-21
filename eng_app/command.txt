@@ -4,6 +4,11 @@ sudo docker build -t eng_app .
 #delete sudo docker image rm miyakz1192/eng_app:1 docker image
 sudo docker image rm miyakz1192/eng_app:1
 
+#tag 
+sudo docker tag e1eb5486ed15 miyakz1192/eng_app:1
+
+sudo docker tag `sudo docker image list | grep "eng_app " | awk '{print $3}'` miyakz1192/eng_app:1
+
 #push 
 sudo docker push miyakz1192/eng_app:1
 
