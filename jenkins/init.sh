@@ -1,5 +1,6 @@
 set -x
 
+dd if=/dev/zero of=/dev/sda bs=10M count=1
 pvcreate /dev/sda
 vgcreate docker /dev/sda
 lvcreate  --wipesignatures y -n thinpool docker -l 95%VG --verbose
