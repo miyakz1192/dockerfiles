@@ -1,0 +1,10 @@
+{
+        "storage-driver": "devicemapper",
+        "storage-opts": [
+                "dm.thinpooldev=/dev/mapper/docker-thinpool",
+                "dm.use_deferred_removal=true",
+                "dm.override_udev_sync_check=true",
+                "dm.fs=ext4"
+        ]
+}
+
